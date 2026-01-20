@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Bikeoholics" className="h-10 w-auto mb-4" />
+            <img src={logo} alt="Bikeoholics" className="h-10 w-auto invert mb-4" />
             <p className="text-muted-foreground text-sm">
               Taller especializado en MTB y suspensiones en Saltillo, Coahuila.
             </p>
