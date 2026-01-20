@@ -18,11 +18,11 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-foreground">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-white/20 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex-shrink-0">
-            <img src={logo} alt="Bikeoholics" className="h-10 md:h-12 w-auto invert" />
+            <img src={logo} alt="Bikeoholics" className="h-10 md:h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -34,7 +34,7 @@ export function Header() {
                 className={`text-sm font-semibold uppercase tracking-wide transition-colors ${
                   location.pathname === item.path
                     ? "text-primary"
-                    : "text-card hover:text-primary"
+                    : "text-foreground hover:text-primary"
                 }`}
               >
                 {item.label}
@@ -51,7 +51,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden text-card p-2"
+            className="lg:hidden text-foreground p-2"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -60,7 +60,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="lg:hidden py-4 border-t border-muted/20">
+          <nav className="lg:hidden py-4 border-t border-white/20">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link
@@ -70,7 +70,7 @@ export function Header() {
                   className={`py-3 px-4 text-sm font-semibold uppercase tracking-wide transition-colors ${
                     location.pathname === item.path
                       ? "text-primary bg-accent"
-                      : "text-card hover:text-primary hover:bg-accent"
+                      : "text-foreground hover:text-primary hover:bg-accent"
                   }`}
                 >
                   {item.label}
