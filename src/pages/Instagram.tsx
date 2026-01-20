@@ -31,7 +31,7 @@ export default function InstagramPage() {
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-card/10 mb-6">
             <InstagramIcon size={40} className="text-card" />
           </div>
-          <h1 className="text-card mb-4">@bikeoholics</h1>
+          <h1 className="text-card mb-4">@bikeoholics_slw</h1>
           <p className="text-card/80 max-w-xl mx-auto mb-8">
             Síguenos en Instagram para ver nuestros trabajos, rodadas y todo el
             contenido MTB.
@@ -43,7 +43,7 @@ export default function InstagramPage() {
             className="inline-flex items-center gap-2"
           >
             <a
-              href="https://instagram.com/bikeoholics"
+              href="https://instagram.com/bikeoholics_slw"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -61,7 +61,7 @@ export default function InstagramPage() {
           {instagramImages.map((image, index) => (
             <a
               key={index}
-              href="https://instagram.com/bikeoholics"
+              href="https://instagram.com/bikeoholics_slw"
               target="_blank"
               rel="noopener noreferrer"
               className="aspect-square overflow-hidden group"
@@ -77,7 +77,7 @@ export default function InstagramPage() {
         <div className="text-center mt-8">
           <Button asChild variant="outline" size="lg">
             <a
-              href="https://instagram.com/bikeoholics"
+              href="https://instagram.com/bikeoholics_slw"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2"
